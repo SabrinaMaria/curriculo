@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:700");
+
+.accent{
+    color: 	rgb(228, 39, 39);
+}
+
+html{
+    margin: 0;
+    font-size: 12px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin-left: 14cm;
+    line-height: 1.3;
+    background: #F7F7F7;
+}
+
+.container{
+    max-width: 19cm;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+}
+
+header{
+    margin-bottom: 3.2em;
+    /* grid-column: span 2; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+header quote{
+    line-height: 1.5rem;
+    font-size: 1rem
+}
+
+.basic_info{
+    line-height: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5cm;
+    margin-top: 2.4rem;
+    line-height: 1.5;
+    color: #999;
+}
+/* .basic_info div:first-of-type{
+    color: tomato;
+} */
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase
+}
+
+h1, h2, h3, p{
+    margin: 0
+}
+
+h1{
+    font-size: 2.4rem;
+    line-height: 1
+}
+
+h2{
+    font-size: 2.4rem;
+    margin-top: 4.1rem;
+    line-height: 1;
+    color: rgba(218, 158, 154, 0.616);
+}
+
+.container > div > section:first-of-type h2{
+    margin-top: 0;
+}
+
+h3{
+    font-size: 1.2rem;
+    line-height: 1.2
+}
+
+small{
+    display: block;
+    color: #999
+}
+
+section:not(:first-child){
+    margin-top: 1.6rem
+}
+
+section > div{
+    margin-top: 0.8rem;
+}
+
+section .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.8rem;
+}
+
+section.languages h2{
+    grid-column-end: span 2;
+}
+
+section.languages div span{
+    color: green !important;
+}
+
+section.languages div span img{
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 0px;
+}
+
+.single-quote{
+    text-indent: -0.15em;
+}
+
+@page{
+    size: A4;
+    margin: 1.6cm 1cm 1cm 1cm
+}
+
+@media print{
+    html, body{
+        background: white !important;
+        margin: 0;
+        -webkit-print-color-adjust: exact
+    }
+}
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: -2px; /* Add top padding */
+    padding-bottom: -2px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+.html {
+    width: 30%; background-color: rgb(228, 106, 69);
+    margin-left: -4.3cm;
+} /* Green */
+.css {
+    width: 30%; background-color: rgb(228, 106, 69);
+    margin-left: -4.3cm;
+} /* Blue */
+.java {
+    width: 65%; background-color: rgb(228, 106, 69);
+    margin-left: -4.3cm;
+} /* Red */
+.sql {
+    width: 80%; background-color: rgb(228, 106, 69);
+    margin-left: -4.3cm;
+}
+.android {
+    width: 30%; background-color: rgb(228, 106, 69);
+    margin-left: -4.3cm;
+} 
